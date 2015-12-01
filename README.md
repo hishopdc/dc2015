@@ -20,6 +20,51 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 ## 抢购业务描述
 
 ## 数据库及数据结构
+![数据库关系](http://him.hishop.com.cn/hishopdc2015/ds.png)
+
+商品表（Products）：
+
+| 列名              | 类型      | 长度  | 可空  | 说明                |
+| :---------------- | :-------- | :---- | :---- | :------------------ |
+| ProductId [PK]    | int       | 4     | N     | 商品编号            |
+| ProductName       | nvarchar  | 200   | N     | 商品名称            |
+| SaleCounts        | int       | 4     | N     | 销量                |
+| Stock             | int       | 4     | N     | 库存                |
+
+抢购活动表（Promotions）：
+
+| 列名              | 类型      | 长度  | 可空  | 说明                |
+| :---------------- | :-------- | :---- | :---- | :------------------ |
+| PromotionId [PK]  | int       | 4     | N     | 活动编号            |
+| ProductId         | int       | 4     | N     | 商品编号            |
+| StartTime         | DateTime  |       | N     | 开始时间            |
+| EndTime           | DateTime  |       | N     | 结束时间            |
+| Quantity          | int       | 4     | N     | 数量                |
+| Price             | Money     |       | N     | 价格                |
+
+会员用户表（Users）：
+
+| 列名              | 类型      | 长度  | 可空  | 说明                |
+| :---------------- | :-------- | :---- | :---- | :------------------ |
+| UserId [PK]       | int       | 4     | N     | 用户编号            |
+| UserName          | nvarchar  | 4     | N     | 用户名              |
+| RealName          | nvarchar  | 50    | Y     | 真实姓名            |
+| CellPhone         | nvarchar  | 50    | Y     | 手机号码            |
+| Address           | nvarchar  | 50    | Y     | 收货地址            |
+| OrderNumber       | int       | 4     | N     | 下单总数            |
+| OrderAmount       | Money     |       | N     | 下单总金额          |
+
+订单表（Orders）：
+
+| 列名              | 类型      | 长度  | 可空  | 说明                |
+| :---------------- | :-------- | :---- | :---- | :------------------ |
+| OrderId [PK]      | nvarchar  | 50    | N     | 订单编号            |
+| UserId            | int       | 4     | N     | 用户编号            |
+| PromotionId       | int       | 4     | N     | 活动编号            |
+| ProductId         | int       | 4     | N     | 商品编号            |
+| OrderTime         | DateTime  |       | N     | 订单提交时间        |
+| PayTime           | DateTime  |       | Y     | 订单支付时间        |
+| CloseTime         | DateTime  |       | N     | 订单关闭时间        |
 
 <a name="HTTP服务接口规范" />
 ## HTTP服务接口规范
