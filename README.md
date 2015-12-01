@@ -68,7 +68,7 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 | ProductId         | int       | 4     | N     | 商品编号            |
 | OrderTime         | DateTime  |       | N     | 订单提交时间        |
 | PayTime           | DateTime  |       | Y     | 订单支付时间        |
-| CloseTime         | DateTime  |       | N     | 订单关闭时间        |
+| CloseTime         | DateTime  |       | Y     | 订单关闭时间        |
 
 <a name="HTTP服务接口规范" />
 ## HTTP服务接口规范
