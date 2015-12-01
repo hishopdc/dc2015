@@ -51,7 +51,7 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 | 列名              | 类型      | 长度  | 可空  | 说明                |
 | :---------------- | :-------- | :---- | :---- | :------------------ |
 | UserId [PK]       | int       | 4     | N     | 用户编号            |
-| UserName          | nvarchar  | 4     | N     | 用户名              |
+| UserName          | nvarchar  | 50    | N     | 用户名              |
 | RealName          | nvarchar  | 50    | Y     | 真实姓名            |
 | CellPhone         | nvarchar  | 50    | Y     | 手机号码            |
 | Address           | nvarchar  | 50    | Y     | 收货地址            |
