@@ -18,6 +18,7 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 > 亦可选择其他的开源平台方案，如 Linux/BSD + PHP / JSP / Node.js / Python 等，需检查阿里云ECS服务中是否提供相应的系统镜像，并自行配置相应的环境，且只能连接组织方规定的数据系统。
 
 ## 抢购业务描述
+![业务流程](http://him.hishop.com.cn/hishopdc2015/cg.png)
 
 ## 数据库及数据结构
 ![数据库关系](http://him.hishop.com.cn/hishopdc2015/ds.png)
