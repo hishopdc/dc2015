@@ -135,6 +135,11 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 {
   error: 'sold out'
 }
+
+// 已经抢过
+{
+  error: 'already purchased'
+}
 ```
 
 ### 3. 支付抢购订单（POST方式）
