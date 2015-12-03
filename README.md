@@ -174,7 +174,8 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 
 // 重复支付
 {
-  error: 'already paid'
+  error: 'already paid',
+  pay_time: '2015-11-30 08:30:45'
 }
 ```
 
