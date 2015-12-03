@@ -171,5 +171,10 @@ HiShop疯狂的程序员 - 2015 竞技大赛
   error: 'timeout',
   close_time: '2015-11-30 08:31:00'
 }
+
+// 重复支付
+{
+  error: 'already paid'
+}
 ```
 
