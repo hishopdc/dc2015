@@ -1,6 +1,6 @@
 CREATE TABLE [Products]
 (
-  [ProductId] [int] NOT NULL IDENTITY(1, 1),
+  [ProductId] [int] NOT NULL,
   [ProductName] [nvarchar] (200) NOT NULL,
   [SaleCounts] [int] NOT NULL,
   [Stock] [int] NOT NULL
@@ -13,7 +13,7 @@ CREATE TABLE [Products]
 GO
 CREATE TABLE [Promotions]
 (
-  [PromotionId] [int] NOT NULL IDENTITY(1, 1),
+  [PromotionId] [int] NOT NULL,
   [ProductId] [int] NOT NULL,
   [StartTime] [datetime] NOT NULL,
   [EndTime] [datetime] NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE [Promotions]
 GO
 
 CREATE TABLE [Users] (
-  [UserId] [int] NOT NULL IDENTITY(1, 1),   
+  [UserId] [int] NOT NULL,   
   [UserName][nvarchar] (50) NOT NULL,
   [RealName][nvarchar] (50) NULL,
   [CellPhone][nvarchar] (50) NULL,
