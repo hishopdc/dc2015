@@ -17,6 +17,12 @@ HiShop疯狂的程序员 - 2015 竞技大赛
 
 > 亦可选择其他的开源平台方案，如 Linux/BSD + PHP / JSP / Node.js / Python 等，需检查阿里云ECS服务中是否提供相应的系统镜像，并自行配置相应的环境，且只能连接组织方规定的数据系统。
 
+## 答案提交
+1. 提交前请自行将 web.config 中的数据库连接字符串修改为：
+> server=localhost;uid=bench_user;pwd=qwe123123;Trusted_Connection=no;database=bench
+
+2. 使用Release方式编译后，将可运行程序文件夹压缩成ZIP文件，发送至 liwenwu@hishop.com.cn
+
 ## 抢购业务描述
 抢购成功后，60秒内没有收到正确的支付请求，则释放库存。
 
