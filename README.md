@@ -139,6 +139,16 @@ HiShop疯狂的程序员 - 2015 竞技大赛
   order_time: '2015-11-30 08:30:00',
 }
 
+// 活动未开始
+{
+  error: 'not started'
+}
+
+// 活动已结束
+{
+  error: 'ended'
+}
+
 // 已经抢光
 {
   error: 'sold out'
